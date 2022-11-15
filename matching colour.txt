@@ -1,0 +1,49 @@
+import java.util.*;
+
+class Rectangle
+{
+			private float l,b,a;
+			private String c;
+		
+			void accept()
+			{
+					Scanner sc = new Scanner(System.in);
+					System.out.println("enter l and b");
+					l = sc.nextFloat();
+					b = sc.nextFloat();
+					System.out.println("enter Color");					
+					c = sc.next();
+			}
+			void area()
+			{
+					a = l*b;
+					System.out.println("Area  =  " + a);
+			}	
+			void check(Rectangle p)
+			{
+						
+						if(a== p.a  && c.equals(p.c))
+						{
+							System.out.println("Matching Rectangle");
+						}
+						else
+						{		
+							System.out.println("NotMatching Rectangle");				
+						}
+			}
+
+}
+
+class AreaCheck
+{
+		public static void main(String ar[])
+		{
+					Rectangle x = new Rectangle();					
+					Rectangle y = new Rectangle();
+					x.accept();
+					y.accept();
+					x.area();
+					y.area();
+					x.check(y);
+		}
+}

@@ -1,0 +1,63 @@
+
+import java.util.*;
+class Arith
+{
+		public static void main(String arp[])
+		{
+					int a,b,c,f,i,ch,n;
+					float d;
+					Scanner sc = new Scanner(System.in);
+					System.out.println("1.Addition");
+					System.out.println("2.Subtraction");
+					System.out.println("3.Multiplication");
+					System.out.println("4.Division");
+					System.out.println("5.Factorial");
+					System.out.println("enter choice");
+					ch = sc.nextInt();
+					switch(ch)
+					{
+							case 1:
+										System.out.println("enter 2 nos");
+										a = sc.nextInt();
+										b = sc.nextInt();
+										c = a+b;
+										System.out.println("Addition = " + c);
+										break;
+							case 2:
+										System.out.println("enter 2 nos");
+										a = sc.nextInt();
+										b = sc.nextInt();
+										c = a-b;
+										System.out.println("Subtraction = " + c);
+										break;
+							case 3:
+										System.out.println("enter 2 nos");
+										a = sc.nextInt();
+										b = sc.nextInt();
+										c = a*b;
+										System.out.println("Multiplication = " + c);
+										break;
+
+							case 4:
+										System.out.println("enter 2 nos");
+										a = sc.nextInt();
+										b = sc.nextInt();
+										d = (float)a/(float)b;
+										System.out.println("Division = " + d);
+										break;
+							case 5:
+										System.out.println("enter no");
+										n = sc.nextInt();
+										f = 1;
+										for(i=1;i<=n;i++)
+										{
+												f = f*i;
+										}
+										System.out.println("factorial = " + f);
+										break;
+							default:
+										System.out.println("Invalid choice");
+					}
+		}	
+			
+}

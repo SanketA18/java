@@ -1,0 +1,20 @@
+import java.applet.*;
+import java.awt.*;
+
+/*<applet code="ShapeExample" width="600" height="800"></applet>*/
+
+public class ShapeExample extends Applet
+{
+			public void paint(Graphics g)
+			{
+						g.setColor(Color.red);
+						g.fillOval(100,100,200,200);
+						g.fillRect(100,350,400,200);
+						g.drawLine(500,50,400,300);
+						Font f  = new Font("Verdana",Font.BOLD,25);
+						g.setFont(f);
+						g.drawString("Hello world",100,50);
+			}
+
+}
+		

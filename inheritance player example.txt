@@ -1,0 +1,52 @@
+
+import java.util.*;
+
+class Player
+{
+			protected int pcode;
+			protected String pname;
+			void accept()
+			{
+					Scanner sc = new Scanner(System.in);
+					System.out.println("enter player details");
+					pcode = sc.nextInt();
+					pname = sc.next();
+				
+			}
+			void display()
+			{
+					System.out.print(pcode+ "    "+ pname+"    " );
+			}
+}
+class CricketPlayer extends Player
+{
+			private int runs;
+			private int wickets;
+			private int notout;
+		
+			void accept()
+			{
+					super.accept();
+					Scanner sc =new Scanner(System.in);
+					System.out.println("enter cricket player details");
+					runs = sc.nextInt();
+					wickets = sc.nextInt();
+					notout = sc.nextInt();
+			}
+			void display()
+			{
+					super.display();
+					System.out.println(runs+"  "+wickets+"  "+notout);
+			}
+}
+
+class InheritanceExample
+{
+		public static void main(String ar[])
+		{
+					CricketPlayer x = new CricketPlayer();
+					x.accept();
+					x.display();
+		}
+}
+		

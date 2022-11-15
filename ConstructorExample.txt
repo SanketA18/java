@@ -1,0 +1,52 @@
+import java.util.*;
+
+class Student
+{
+			private int rno;
+			private String sname;
+			private String course;
+			private float per;
+
+			Student()
+			{
+					rno = 0;
+					sname = "";
+					course = "";
+					per = 0.0f;	
+			}
+			
+			Student(int a,String b,String c,float d)
+			{
+					rno = a;
+					sname = b;
+					course = c;
+					per = d;
+			}
+			
+			void display()
+			{
+					System.out.println(rno+"  "+sname+"  " + course + "  " +per);
+			}
+				
+			
+		
+}
+
+class ConstructorExample
+{
+			public static void main(String arp[])
+			{
+					int p;
+					String q,r;
+					float s;
+					Scanner sc = new Scanner(System.in);
+					System.out.println("enter student details");
+					p = sc.nextInt();
+					q = sc.next();
+					r = sc.next();
+					s = sc.nextFloat();
+			
+					Student x = new Student(p,q,r,s);
+					x.display();
+			}		
+}
